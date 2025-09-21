@@ -1,7 +1,6 @@
 // @ts-check
 
 const FRAGMENT_SHADER_PREAMBLE = `#version 300 es
-#version 300 es
 precision mediump float;
 
 // Input from the vertex shader, ranges from -1 to 1.
