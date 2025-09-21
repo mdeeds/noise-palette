@@ -9,13 +9,17 @@ in vec2 v_position;
 // The output color of the fragment.
 out vec4 outColor;
 
-vec4 f(in vec4 x) {
-  vec4 d = cos(3.14 * 0.707 * x);
-  return vec4(d.rgba * d.gbar);
-}
-
 vec4 g(in vec4 x) {
   return (x * 7.0);
+}
+
+vec4 rep(in vec4 x) {
+  return mod(x, 3.1415 * 2.0);
+}
+
+vec4 f(in vec4 x) {
+  vec4 d = vec4(length(x.xy), length(x.xy), length(x.zw), length(x.zw));
+  return cos(d);
 }
 `;
 
