@@ -1,0 +1,27 @@
+div {
+  border: 1px solid #ddd;
+  padding: 2px;
+  margin: 1px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.preamble {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.fragment-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.fragment {
+  width: 24.8%;
+  height: auto;
+  box-sizing: border-box;
+}
